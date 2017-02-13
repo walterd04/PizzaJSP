@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Devin's Pizza</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href ="mystyle.css">
+    </head>
+    <body>
+        <h1>Devin's PIzza Web Order Form!</h1>
+        <form name='pizzaform' method='get' action='order.jsp'>
+            <p>Customer Email: <input type ='text' name ='email' size ='40' 
+                                      placeholder ="enter email" required></p>
+            <input type ='radio' name ='size' value='large' checked required>Large($7)
+            <input type ='radio' name ='size' value ='medium'>Medium($6)
+            <input type ='radio' name ='size' value ='small'>Small($5)
+            </br>
+            <input type ='radio' name ='crust' value ='pan'>Pan(Add $1.00)
+            <input type ='radio' name ='crust' value ='hand'>Hand-Tossed(Add $0.50)
+            <input type ='radio' name ='crust' value ='thin'>Thin
+            </br>
+            <h4>Each additional topping adds $0.75!</h4>
+            <input type ="checkbox" name ="toppings" value="pepperoni">Pepperoni
+            <input type="checkbox" name="toppings" value="mushroom">Mushroom
+            <input type="checkbox" name="toppings" value="pineapple">Pineapple
+            </br>
+            <input type='submit' name ='order' value ="Place Order">           
+        </form>
+    </body>
+</html>
